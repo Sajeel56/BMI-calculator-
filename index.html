@@ -2,23 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BMI Calculator Online</title>
+    <title>BMI Calculator | Health Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online BMI calculator to check your body mass index easily.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<header>
     <h1>BMI Calculator</h1>
-    <p>Check your Body Mass Index easily</p>
+    <p>Simple tool to understand your body health</p>
+</header>
 
-    <input type="number" id="weight" placeholder="Weight (kg)">
-    <input type="number" id="height" placeholder="Height (cm)">
+<main class="card">
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Enter your weight">
+
+    <label>Height (cm)</label>
+    <input type="number" id="height" placeholder="Enter your height">
 
     <button onclick="calculateBMI()">Calculate BMI</button>
 
-    <h2 id="result"></h2>
-</div>
+    <div id="result"></div>
+</main>
+
+<footer>
+    <p>© 2026 Health Calculators</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+
